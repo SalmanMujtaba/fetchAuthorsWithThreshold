@@ -65,7 +65,6 @@ export default class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.allValues);
     return (
       <main>
         <div class="element element-3">

@@ -23,10 +23,42 @@ main {
   background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
 }
 
-.margin-left-15 {
+.button-container {
   margin-left: 0.9375rem;
 }
 
 input {
   margin-left: 0.625rem;
+}
+
+form {
+  display: flex;
+}
+
+label {
+  margin-right: 0.625rem;
+}
+
+@media (max-width: 640px) {
+  form {
+    display: block;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    span {
+      align-self: center;
+      margin-bottom: 0.625rem;
+    }
+  }
+  .button-container {
+    margin-top: 1.25rem;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .element {
+    min-width: 45vw;
+  }
 }

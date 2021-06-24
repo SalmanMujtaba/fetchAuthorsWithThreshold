@@ -71,10 +71,14 @@ export default class App extends React.Component {
           <div>
             <form onSubmit={this.handleSubmit}>
               <label>
-                Enter The Threshold: 
+                <span>                
+                  Enter The Threshold: 
+                </span>
                 <input type="number" value={this.state.value} onChange={this.handleChange} />
               </label>
-              <button class="margin-left-15">Submit</button>
+              <div class="button-container">              
+                <button>Submit</button>
+              </div>
             </form>
           <DataList data={this.state.allValues}></DataList>
           </div>
